@@ -1,5 +1,5 @@
 body, html{
-background-color: #0A0A0A;
+background-color: black;
   height: 100%;
   margin: 0;
   display: flex;
@@ -8,11 +8,17 @@ background-color: #0A0A0A;
   width: 100%;
 }
 
+
 h1 {
   color: white;
+  background-color: black;
+  padding: 10px;
+  border: 20px solid white;
+  border-radius: 20px;
+  margin-bottom: 80px;
   width: 100%;
   font-size: 13rem;
-  font-family: 'Basis33'; /* Use the defined font-family */
+  margin-top: 0px;
 }
 
 .btns{
