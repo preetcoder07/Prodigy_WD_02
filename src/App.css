@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body, html{
+background-color: #0A0A0A;
+  height: 100%;
+  margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
   color: white;
+  width: 100%;
+  font-size: 13rem;
+  font-family: 'Basis33'; /* Use the defined font-family */
 }
 
-.App-link {
-  color: #61dafb;
+.btns{
+  display:flex ;
+  justify-content: space-evenly;
+  font-size: 100px;
+}
+.btn1{
+  background-color: green;
+  font-size: 3.5rem;
+  color: white;
+  font-family: serif;
+  border-radius: 8px;
+  transition: transform 0.5s ease-in-out;
+  padding: 4px;
+  
+}
+.btn1:hover{
+  box-shadow: 4px 4px 4px rgb(4, 255, 66);
+  transform: scale(1.08);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn2{
+  background-color: rgb(191, 10, 3);
+  font-size: 3.5rem;
+  color: white;
+  font-family: serif;
+  border-radius: 8px;
+  transition: transform 0.5s ease-in-out;
+  padding: 4px;
+  
+}
+.btn2:hover{
+  box-shadow: 4px 4px 4px rgb(184, 5, 5);
+  transform: scale(1.08);
+}
+
+.btn3{
+  background-color: rgb(12, 194, 210);
+  font-size: 3.5rem;
+  color: white;
+  font-family: serif;
+  border-radius: 8px;
+  transition: transform 0.5s ease-in-out;
+  padding: 4px;
+  
+}
+.btn3:hover{
+  box-shadow: 4px 4px 4px rgb(5, 205, 205);
+  transform: scale(1.08);
 }
