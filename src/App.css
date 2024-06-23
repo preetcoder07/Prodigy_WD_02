@@ -7,18 +7,34 @@ background-color: black;
   align-items: center;
   width: 100%;
 }
-
+.full_stopwatch{
+  transition: transform 0.4s ease-in-out;
+}
+.full_stopwatch:hover{
+  transform: scale(1.05);
+}
 
 h1 {
   color: white;
   background-color: black;
   padding: 10px;
-  border: 20px solid white;
+  border: 20px solid rgb(198, 177, 177);
   border-radius: 20px;
   margin-bottom: 80px;
   width: 100%;
-  font-size: 13rem;
+  font-size: 10rem;
   margin-top: 0px;
+}
+
+.laps{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: aliceblue;
+  margin-top: 30px;
+  margin-left: 370px;
 }
 
 .btns{
@@ -68,5 +84,20 @@ h1 {
 }
 .btn3:hover{
   box-shadow: 4px 4px 4px rgb(5, 205, 205);
+  transform: scale(1.08);
+}
+
+.btn4{
+  background-color: rgb(151, 134, 5);
+  font-size: 3.5rem;
+  color: white;
+  font-family: serif;
+  border-radius: 8px;
+  transition: transform 0.5s ease-in-out;
+  padding: 4px;
+}
+
+.btn4:hover{
+  box-shadow: 4px 4px 4px rgb(151, 134, 5);
   transform: scale(1.08);
 }

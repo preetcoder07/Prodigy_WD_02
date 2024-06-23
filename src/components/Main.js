@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+
 const Main = () => {
     const [time, setTime] = useState(0);
     const [running, setRunning] = useState(false);
+    const [laps, setLaps] = useState([]);
 
     useEffect(() => {
         let timer;
@@ -20,6 +22,15 @@ const Main = () => {
     const handleReset = () => {
         setRunning(false);
         setTime(0);
+        setLaps([]);
+    };
+
+    const handleLap = () => {
+        const newLap = {
+            id: laps.length + 1,
+            time: formatTime(time)
+        };
+        setLaps([...laps, newLap]);
     };
 
     const formatTime = (time) => {
@@ -38,8 +49,17 @@ const Main = () => {
             <h1>{formatTime(time)}</h1>
             <div className="btns">
                 <button onClick={handleStart} className="btn1">Start</button>
-                <button onClick={handleStop}className="btn2">Stop</button>
-                <button onClick={handleReset}className="btn3">Reset</button>
+                <button onClick={handleStop} className="btn2">Stop</button>
+                <button onClick={handleReset} className="btn3">Reset</button>
+                <button onClick={handleLap} className="btn4">Lap</button>
+            </div>
+            <div className="laps">
+                <h2>Laps:</h2>
+                <ul>
+                    {laps.map(lap => (
+                        <li key={lap.id}>{`Lap ${lap.id}: ${lap.time}`}</li>
+                    ))}
+                </ul>
             </div>
         </div>
     );
